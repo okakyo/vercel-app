@@ -1,10 +1,19 @@
-import {} from "@chakra-ui/react";
-import { VFC } from "react";
+import { Box, Container } from "@chakra-ui/react";
+import { FC } from "react";
 
-export const MainLayout:VFC =>{
+export const MainLayout:FC= ({children})=>{
     return (
         <>
-        
+            <Box>
+                <Box>
+                    Sample
+                </Box>
+                <Box>
+                    <Container>
+                        {children}
+                    </Container>
+                </Box>
+            </Box>
         </>
     )
 }
