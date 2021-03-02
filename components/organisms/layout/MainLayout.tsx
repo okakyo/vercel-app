@@ -1,16 +1,26 @@
-import { Box, Container } from "@chakra-ui/react";
+import { Box, Container} from "@chakra-ui/react";
 import { FC } from "react";
 
 export const MainLayout:FC= ({children})=>{
     return (
         <>
-            <Box>
+            <Box
+               bg="#edf2f7"
+            >
+               
                 <Box>
-                    Sample
-                </Box>
-                <Box>
-                    <Container>
-                        {children}
+                    <Container
+                        height="90vh"
+                        p={3} 
+                        maxW="container.lg"
+                    >
+                        <Box 
+                            bgColor="white"
+                            height="100%"
+                        >
+                            {children}
+                        </Box>
+                        
                     </Container>
                 </Box>
             </Box>
